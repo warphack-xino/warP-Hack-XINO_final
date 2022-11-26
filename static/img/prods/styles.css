@@ -1,0 +1,70 @@
+.head {
+    background-color:#fc3d03d3 ;
+    color: white;
+    padding: 10px;
+    font-size: 60px;
+    text-align: center;
+    width: 1200px;
+    height: 200px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    text-align: center;
+    text-align-last: center;
+
+  }
+  .head:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 1;
+    transform: scale(1.03);
+background-color: #f71a0afa;
+
+    transition: transform 0.5s, opacity 0.5s;
+    
+  }
+  .content{
+    margin-left: 50px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 20px;
+  }
+h2{
+font-size: 40px;
+}
+
+.logo{
+    height: 70px;
+    width: 70px;
+    border-radius: 70%;
+}
+ion-icon {
+    color: #818cf8;
+    font-size: 48px;
+  }
+
+#aboutHeading{
+  background-color: rgba(252, 61, 3, 0.827);
+  height: 45px;
+  width: 100px;
+  text-align: center;
+  color:whitesmoke;
+  
+}
+#aboutHeading:hover{
+  background-color: rgba(252, 61, 3, 0.9);
+}
+
+#about_text{
+  margin-top: 50px;
+  margin-bottom: 340px;
+}
+
+li{
+  margin: 5px;
+  width: fit-content;
+}
+li:hover{
+  background-color: aqua;
+  width: fit-content;
+}

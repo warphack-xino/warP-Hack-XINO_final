@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% block title %}
+    Essentials
+{% endblock title %}
+{% block body %}
+    <!-- {{ bandage }}<form method="POST" action="/buy"><button class="btn btn-primary my-2">Buy</button><br></form>
+    {{ food_packet }}<form method="POST" action="/buy2"><button class="btn btn-primary my-2">Buy</button><br></form>
+    {{ water }}<form method="POST" action="/buy3"><button class="btn btn-primary my-2">Buy</button><br></form>
+    {{ ors }}<form method="POST" action="/buy4"><button class="btn btn-primary my-2">Buy</button><br></form>
+    {{ jacket }}<form method="POST" action="/buy5"><button class="btn btn-primary my-2">Buy</button><br></form>
+    {{ medicine }}<form method="POST" action="/buy6"><button class="btn btn-primary my-2">Buy</button><br></form>
+    {{ helmet }} <form method="POST" action="/buy7"><button class="btn btn-primary my-2">Buy</button><br></form>
+    {{ climbing_ropes }} <form method="POST" action="/buy8"><button class="btn btn-primary my-2">Buy</button><br></form>
+    {{ backpack }} <form method="POST" action="/buy9"><button class="btn btn-primary my-2">Buy</button><br></form>
+    {{ binoculars }} <form method="POST" action="/buy10"><button class="btn btn-primary my-2">Buy</button><br></form> -->
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Essential Supplies</h1>
+              <div class="h-1 w-20 bg-indigo-400 rounded"></div>
+            </div>
+            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Essential supplies that you can purchase using your NouCredits. Cashback ensured!</p>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+                <form method="POST" action="/buy">
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="/static/img/prods/bandage.png">
+                
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">{{bandage}}</h2>
+                <button type="submit" class="inline-flex font-semibold rounded-full ml-2 py-2 px-5 text-white transition ease-in-out delay-1 bg-indigo-400 hover:bg-indigo-500 duration-300">Buy</button>
+              </div>
+              </form>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <form action="/buy2" method="post">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="/static/img/prods/food.png"">
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">{{food_packet}}</h2>
+                <button type="submit" class="inline-flex font-semibold rounded-full ml-2 py-2 px-5 text-white transition ease-in-out delay-1 bg-indigo-400 hover:bg-indigo-500 duration-300">Buy</button>
+            </form>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <form action="/buy3" method="post">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="/static/img/prods/water.png">
+                
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">{{water}}</h2>
+                <button type="submit" class="inline-flex font-semibold rounded-full ml-2 py-2 px-5 text-white transition ease-in-out delay-1 bg-indigo-400 hover:bg-indigo-500 duration-300">Buy</button>
+            </form>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <form action="/buy4" method="post">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="/static/img/prods/ors.png">
+                
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">{{ors}}</h2>
+                <button type="submit" class="inline-flex font-semibold rounded-full ml-2 py-2 px-5 text-white transition ease-in-out delay-1 bg-indigo-400 hover:bg-indigo-500 duration-300">Buy</button>
+            </form>
+            </div>
+          </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <form action="/buy5" method="post">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="/static/img/prods/jacket.png">
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">{{jacket}}</h2>
+                <button type="submit" class="inline-flex font-semibold rounded-full ml-2 py-2 px-5 text-white transition ease-in-out delay-1 bg-indigo-400 hover:bg-indigo-500 duration-300">Buy</button>
+            </form>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <form action="/buy6" method="post">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="/static/img/prods/medicine.png">
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">{{medicine}}</h2>
+                <button type="submit" class="inline-flex font-semibold rounded-full ml-2 py-2 px-5 text-white transition ease-in-out delay-1 bg-indigo-400 hover:bg-indigo-500 duration-300">Buy</button>
+            </form>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <form action="/buy7" method="post">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="/static/img/prods/helmet.svg">
+                
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">{{helmet}}</h2>
+                <button type="submit" class="inline-flex font-semibold rounded-full ml-2 py-2 px-5 text-white transition ease-in-out delay-1 bg-indigo-400 hover:bg-indigo-500 duration-300">Buy</button>
+            </form>
+            </div>
+          </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <form action="/buy8" method="post">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="/static/img/prods/rope.png">
+                
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">{{climbing_ropes}}</h2>
+                <button type="submit" class="inline-flex font-semibold rounded-full ml-2 py-2 px-5 text-white transition ease-in-out delay-1 bg-indigo-400 hover:bg-indigo-500 duration-300">Buy</button>
+            </form>
+            </div>
+          </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <form action="/buy9" method="post">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="/static/img/prods/backpack.png">
+                
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">{{backpack}}</h2>
+                <button type="submit" class="inline-flex font-semibold rounded-full ml-2 py-2 px-5 text-white transition ease-in-out delay-1 bg-indigo-400 hover:bg-indigo-500 duration-300">Buy</button>
+            </form>
+            </div>
+          </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <form action="/buy10" method="post">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="/static/img/prods/binoculars.png">
+                
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">{{binoculars}}</h2>
+                <button type="submit" class="inline-flex font-semibold rounded-full ml-2 py-2 px-5 text-white transition ease-in-out delay-1 bg-indigo-400 hover:bg-indigo-500 duration-300">Buy</button>
+            </form>
+            </div>
+          </div>
+        </div>
+      </section>
+{% endblock body %}
