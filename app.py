@@ -86,8 +86,10 @@ def emergency():
 def update(sno):
     if request.method == 'POST':
         title = request.form['title']
+        desc = request.form['desc']
         todo = Note.query.filter_by(sno=sno).first()
         todo.title=title 
+        todo.desc = desc
         db.session.add(todo)
         db.session.commit()
         return redirect('/emergency')
